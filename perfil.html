@@ -4,62 +4,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Mi perfil</title>
 </head>
 
 <body>
     <header>
-        <h1>El perfil profesional de Elio - 
-            <a href="https://github.com/Cakesito" target="_blank">Github 
-                <img
-                    src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="github-logo"
-                    width="25"
-                >
+        <h1>El perfil profesional de Elio -
+            <a href="https://github.com/Cakesito" target="_blank">Github
+                <img src="github.svg" alt="github-logo"
+                    width="25">
             </a>
         </h1>
     </header>
     <main>
-        <!-- Biografía -->
-        <section>
-            <img src="img/profile.jpg" alt="foto de perfil" width="200">
-            <h2>Biografía</h2>
-            <p>Mi nombre es Elio, tengo <strong>18</strong> años y vivo en <strong>Ubrique</strong>. Actualmente me
-                dedico a
-                estudiar Bachillerato.
-            </p>
-            <p>Me considero una persona responsable, creativa y curiosa, y disfruto programar en mi tiempo libre.</p>
-            <p>Mi objetivo es seguir creciendo tanto a nivel personal como profesional.</p>
-        </section>
+        <div class="articulos">
+            <!-- Biografía -->
+            <section>
+                <img id="perfil" src="img/profile.jpg" alt="foto de perfil" width="200">
+                <h2>Biografía</h2>
+                <article>
+                    <p>Mi nombre es Elio, tengo <strong>18</strong> años y vivo en <strong>Ubrique</strong>. Actualmente
+                        me
+                        dedico a
+                        estudiar Bachillerato.
+                    </p>
+                    <p>Me considero una persona responsable, creativa y curiosa, y disfruto programar en mi tiempo
+                        libre.
+                    </p>
+                    <p>Mi objetivo es seguir creciendo tanto a nivel personal como profesional.</p>
+                </article>
+            </section>
 
-        <!-- Habilidades -->
-        <section>
-            <h2>Lenguajes</h2>
-            <ol>
-                <li>Python
-                    <img style="width: 1rem"
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/120px-Python-logo-notext.svg.png?20250701090410"
-                        alt="python-logo">
+            <!-- Habilidades -->
+            <section>
+                <h2>Lenguajes</h2>
+
+                <article>
+                    <ol>
+                        <li>Python
+                            <img style="width: 1rem"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/120px-Python-logo-notext.svg.png?20250701090410"
+                                alt="python-logo">
+                            <ul>
+                                <li>Bucles</li>
+                            </ul>
+                        </li>
+                        <li>NodeJS, Javascript, Typescript
+                            <ul>
+                                <li>Frontend</li>
+                                <li>Backend</li>
+                            </ul>
+                        </li>
+                        <li>Java</li>
+                    </ol>
+                </article>
+            </section>
+
+            <!-- Contáctame -->
+            <section>
+                <h2>Contáctame</h2>
+                <article>
                     <ul>
-                        <li>Bucles</li>
+                        <li><a href="tel:123456789"><em>Teléfono</em>: 123456789</a></li>
+                        <li><a href="mailto:email@example.com"><em>Email</em>: email@example.com</a></li>
                     </ul>
-                </li>
-                <li>NodeJS, Javascript, Typescript
-                    <ul>
-                        <li>Frontend</li>
-                        <li>Backend</li>
-                    </ul>
-                </li>
-                <li>Java</li>
-            </ol>
-        </section>
+                </article>
+            </section>
+        </div>
     </main>
     <!-- Footer -->
     <footer>
-        <h2>Contáctame</h2>
-        <ul>
-            <li><em>Teléfono</em>: 123456789</li>
-            <li><em>Email</em>: email@example.com</li>
-        </ul>
+        <p>
+            Creado por <em>Elio - 2026</em>
+        </p>
     </footer>
 </body>
 
