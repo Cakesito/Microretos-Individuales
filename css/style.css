@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+    font-family: 'Schibsted Grotesk', sans-serif;
+    background-color: #303030;
+    color: #eeeeee;
+}
+
+main {
+    padding: 1rem;
+    max-width: 70%;
+    margin: auto;
+}
+
+#mi-nombre {
+    color: rgb(140, 167, 241);
+    text-align: center;
+}
+
+h2 {
+    font-family: 'JetBrains Mono', sans-serif;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #777777
+}
+
+article {
+    border: 2px solid #eeeeee;
+    padding: 20px;
+    margin-top: 1rem;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #303030;
+    box-shadow: 12px 12px 2px 1px rgba(255, 255, 255, 0.2);
+}
+
+.articulos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-around;
+    z-index: 5;
+}
+
+.articulos section {
+    min-width: 30%;
+    max-width: 50%;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+#perfil {
+    border-radius: 5px;
+    border: 2px solid #777777;
+}
+
+ol,
+ul {
+    margin: 0;
+}
+
+footer {
+    margin: 1rem;
+    position: absolute;
+    bottom: 0;
+}
+
+.dato-importante {
+    font-weight: 600;
+}
+
+@media (max-width: 600px) {
+    .articulos {
+        max-width: 95%;
+    }
+
+    .articulos section {
+        min-width: 90%;
+    }
+
+    footer {
+        position: relative;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    .articulos section {
+        min-width: 90%;
+    }
+}

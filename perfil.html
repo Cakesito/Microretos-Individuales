@@ -4,16 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Mi perfil</title>
 </head>
 
 <body>
     <header>
-        <h1>El perfil profesional de Elio -
+        <h1 id="mi-nombre">El perfil profesional de Elio -
             <a href="https://github.com/Cakesito" target="_blank">Github
-                <img src="github.svg" alt="github-logo"
-                    width="25">
+                <img src="img/github.svg" alt="github-logo" width="25">
             </a>
         </h1>
     </header>
@@ -21,18 +20,21 @@
         <div class="articulos">
             <!-- Biografía -->
             <section>
-                <img id="perfil" src="img/profile.jpg" alt="foto de perfil" width="200">
                 <h2>Biografía</h2>
-                <article>
-                    <p>Mi nombre es Elio, tengo <strong>18</strong> años y vivo en <strong>Ubrique</strong>. Actualmente
-                        me
-                        dedico a
-                        estudiar Bachillerato.
-                    </p>
-                    <p>Me considero una persona responsable, creativa y curiosa, y disfruto programar en mi tiempo
-                        libre.
-                    </p>
-                    <p>Mi objetivo es seguir creciendo tanto a nivel personal como profesional.</p>
+                <article class="dato-importante flex-row">
+                    <div>
+                        <p>Mi nombre es Elio, tengo <strong>18</strong> años y vivo en <strong>Ubrique</strong>.
+                            Actualmente
+                            me
+                            dedico a
+                            estudiar Bachillerato.
+                        </p>
+                        <p>Me considero una persona responsable, creativa y curiosa, y disfruto programar en mi tiempo
+                            libre.
+                        </p>
+                        <p>Mi objetivo es seguir creciendo tanto a nivel personal como profesional.</p>
+                    </div>
+                    <img id="perfil" src="img/profile.jpg" alt="foto de perfil" width="200">
                 </article>
             </section>
 
@@ -51,12 +53,71 @@
                             </ul>
                         </li>
                         <li>NodeJS, Javascript, Typescript
+                            <img style="width: 1rem;"
+                                src="img/nodejs.svg"
+                                alt="nodejs-logo"
+                            >
+                            <img style="width: 1rem;"
+                                src="img/javascript.png"
+                                alt="nodejs-logo"
+                            >
+                            <img style="width: 1rem;"
+                                src="img/typescript.png"
+                                alt="nodejs-logo"
+                            >
                             <ul>
                                 <li>Frontend</li>
                                 <li>Backend</li>
                             </ul>
                         </li>
-                        <li>Java</li>
+                        <li>Java
+                            <img style="width: 1rem;"
+                                src="img/java.png"
+                                alt="nodejs-logo"
+                            >
+                        </li>
+                    </ol>
+                </article>
+            </section>
+
+            <!-- Habilidades -->
+            <section>
+                <h2>Lenguajes</h2>
+
+                <article>
+                    <ol>
+                        <li>Python
+                            <img style="width: 1rem"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/120px-Python-logo-notext.svg.png?20250701090410"
+                                alt="python-logo">
+                            <ul>
+                                <li>Bucles</li>
+                            </ul>
+                        </li>
+                        <li>NodeJS, Javascript, Typescript
+                            <img style="width: 1rem;"
+                                src="img/nodejs.svg"
+                                alt="nodejs-logo"
+                            >
+                            <img style="width: 1rem;"
+                                src="img/javascript.png"
+                                alt="nodejs-logo"
+                            >
+                            <img style="width: 1rem;"
+                                src="img/typescript.png"
+                                alt="nodejs-logo"
+                            >
+                            <ul>
+                                <li>Frontend</li>
+                                <li>Backend</li>
+                            </ul>
+                        </li>
+                        <li>Java
+                            <img style="width: 1rem;"
+                                src="img/java.png"
+                                alt="nodejs-logo"
+                            >
+                        </li>
                     </ol>
                 </article>
             </section>
@@ -76,7 +137,8 @@
     <!-- Footer -->
     <footer>
         <p>
-            Creado por <em>Elio - 2026</em>
+            Creado por <em>Elio - 2026 - <a href="https://instagram.com">Instagram</a> - <a
+                    href="https://linkedin.com">LinkedIn</a> - <a href="htts://x.com">X</a></em>
         </p>
     </footer>
 </body>
